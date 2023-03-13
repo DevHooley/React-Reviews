@@ -1,11 +1,18 @@
-import { useState } from 'react';
-import Review from './components/Review';
-function App() {
-  return (
-    <div className="App">
-      <Review />
-    </div>
-  );
-}
+import React, { useState } from "react"
+import Review from "./components/Review"
 
-export default App;
+const App = () => {
+  const [count, setCount] = useState(0)
+  return (
+    <main>
+      <section className="container">
+        <div className="title">
+          <h2>our reviews</h2>
+          <div className="underline"></div>
+        </div>
+        <Review />
+      </section>
+    </main>
+  )
+}
+export default App
